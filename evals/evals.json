@@ -1,0 +1,23 @@
+{
+  "skill_name": "grapesjs",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need to create a custom GrapesJS component type called 'pricing-card' that renders a pricing card with title, price, features list, and a CTA button. It should have traits for the plan name, price amount, currency symbol, and button text. Also register a block for it in the 'Marketing' category.",
+      "expected_output": "A complete addType definition with model defaults (tagName, traits array with text types), isComponent detection, view rendering, and a BlockManager.add call with content referencing the type",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "How do I set up GrapesJS with React using @grapesjs/react? I need a layout with a sidebar for blocks, a canvas in the middle, and a style panel on the right. Also configure localStorage storage with auto-save.",
+      "expected_output": "A React component using GjsEditor, WithEditor, Canvas, with proper grapesjs.init options including storageManager config for local storage, and a three-column layout",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I want to add a custom trait type 'color-palette' that shows a row of predefined color swatches the user can click to select. When selected, it should set a data-color attribute on the component. Show me how to register this trait type and use it in a component.",
+      "expected_output": "Complete Traits.addType implementation with createInput (generating swatch buttons), onEvent (handling click, setting data-color attribute), onUpdate (syncing from component to UI), plus a component definition using the custom trait",
+      "files": []
+    }
+  ]
+}
